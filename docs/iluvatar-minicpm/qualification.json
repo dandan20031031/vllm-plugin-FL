@@ -1,0 +1,69 @@
+{
+  "checked_at": "2026-11-10T19:49:34.1129202+08:00",
+  "candidate_commit": "2abbea017e7c3575d715105d3f1819e9d9dff623",
+  "qualification": "latest_engineering_baseline_with_passing_performance_and_accuracy_rerun",
+  "performance_cases": [
+    {
+      "workload": [
+        4096,
+        1024,
+        64,
+        256
+      ],
+      "completed_rounds": 4,
+      "excluded_first_round": true,
+      "complete": true,
+      "retained_rounds": 3,
+      "mean_total_tokens_per_second": 4241.906666666667,
+      "mean_ttft_ms": 4294.85,
+      "throughput_ratio_to_official": 2.091659640074096,
+      "ttft_ratio_to_official": 0.37109248431550274,
+      "throughput_pass_if_complete": true,
+      "ttft_pass_if_complete": true
+    },
+    {
+      "workload": [
+        16384,
+        1024,
+        64,
+        128
+      ],
+      "completed_rounds": 4,
+      "excluded_first_round": true,
+      "complete": true,
+      "retained_rounds": 3,
+      "mean_total_tokens_per_second": 3649.31,
+      "mean_ttft_ms": 137478.55000000002,
+      "throughput_ratio_to_official": 3.9876632246079877,
+      "ttft_ratio_to_official": 0.22941308328845733,
+      "throughput_pass_if_complete": true,
+      "ttft_pass_if_complete": true
+    }
+  ],
+  "accuracy_rerun_correct": 103.0,
+  "accuracy_rerun_questions": 105,
+  "accuracy_rerun_pass": true,
+  "rerun_runtime_hashes_verified": [
+    "__init__.py",
+    "patches/iluvatar_sampler.py",
+    "patches/iluvatar_attention.py",
+    "patches/iluvatar_prefill.py",
+    "patches/iluvatar_decode_pages.py",
+    "patches/iluvatar_config_cache.py",
+    "patches/iluvatar_index1d.py"
+  ],
+  "rerun_evidence_hashes_verified": [
+    "accuracy-rerun/predictions.jsonl",
+    "accuracy-rerun/reviews.jsonl"
+  ],
+  "original_accuracy_correct": 99,
+  "original_accuracy_pass": false,
+  "original_throughput_audit_errors": [
+    "Recorded runtime/source hash differs: patches/iluvatar_index1d.py",
+    "Recorded runtime file list differs from source"
+  ],
+  "original_audits_overwritten": false,
+  "historical_throughput_identity_gap_resolved": false,
+  "official_organizer_acceptance": false,
+  "new_gpu_work": false
+}

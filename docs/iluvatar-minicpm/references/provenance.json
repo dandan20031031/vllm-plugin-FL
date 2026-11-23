@@ -1,0 +1,51 @@
+{
+  "retrieved_at_utc": "2026-11-06T12:06:14.091464+00:00",
+  "purpose": "third_party_Apache2_reference_only_not_installed_not_our_benchmark",
+  "flaggems_ref": "9c06143c",
+  "plugin_ref": "0207b7e1",
+  "attribution": "xy200303 / FlagOS Contributors",
+  "records": [
+    {
+      "file": "paged_decode_attention.py",
+      "url": "https://raw.githubusercontent.com/xy200303/FlagGems/9c06143c/src/flag_gems/fused/paged_decode_attention.py",
+      "error": null,
+      "size": 12793,
+      "sha256": "5e3b7fb72c7a496c99d6004b0f094db0424a72308ec06e808a400d44e1a6d3b6",
+      "git_blob_sha1": "21c41bc3244e84b8256c547f49746f5b25a53872"
+    },
+    {
+      "file": "decode_attn_fast.py",
+      "url": "https://raw.githubusercontent.com/xy200303/vllm-plugin-FL/0207b7e1/vllm_fl/dispatch/backends/vendor/iluvatar/impl/decode_attn_fast.py",
+      "error": null,
+      "size": 9959,
+      "sha256": "c96b8b55e490f6d286b600dee797e3e66005ced3b4dbf2baa40c96e3c10b6a08",
+      "git_blob_sha1": "b683f3e8ea5183398800ceae1994ce1cdf429c3a"
+    },
+    {
+      "file": "FlagGems.LICENSE",
+      "url": "https://raw.githubusercontent.com/xy200303/FlagGems/9c06143c/LICENSE",
+      "error": null,
+      "size": 10174,
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+      "git_blob_sha1": "f433b1a53f5b830a205fd2df78e2b34974656c7b"
+    },
+    {
+      "file": "plugin.LICENSE",
+      "url": "https://raw.githubusercontent.com/xy200303/vllm-plugin-FL/0207b7e1/LICENSE",
+      "error": null,
+      "size": 11281,
+      "sha256": "8a320adc4f089d0c2122e6c6db5cdaa960026c661fe9882f212d7a7ac47d546f",
+      "git_blob_sha1": "7b7f89e19d7184fbf7417791bf75b48511d4fab3"
+    },
+    {
+      "file": "FlagGems.NOTICE",
+      "url": "https://raw.githubusercontent.com/xy200303/FlagGems/9c06143c/NOTICE",
+      "error": "HTTP 404"
+    },
+    {
+      "file": "plugin.NOTICE",
+      "url": "https://raw.githubusercontent.com/xy200303/vllm-plugin-FL/0207b7e1/NOTICE",
+      "error": "HTTP 404"
+    }
+  ]
+}

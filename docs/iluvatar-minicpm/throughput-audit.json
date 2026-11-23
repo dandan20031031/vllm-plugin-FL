@@ -1,0 +1,56 @@
+{
+  "audited_at_utc": "2026-11-10T09:47:51.078602+00:00",
+  "run_dir": "/workspace/eggking/runs/final-acceptance-2abbea0_iluvatar_20261110T081350Z",
+  "expected_commit": "2abbea017e7c3575d715105d3f1819e9d9dff623",
+  "complete": true,
+  "completed_rounds": 8,
+  "validation_errors": [
+    "Recorded runtime/source hash differs: patches/iluvatar_index1d.py",
+    "Recorded runtime file list differs from source"
+  ],
+  "cases": [
+    {
+      "workload": [
+        4096,
+        1024,
+        64,
+        256
+      ],
+      "completed_rounds": 4,
+      "excluded_first_round": true,
+      "complete": true,
+      "retained_rounds": 3,
+      "mean_total_tokens_per_second": 4241.906666666667,
+      "mean_ttft_ms": 4294.85,
+      "throughput_ratio_to_official": 2.091659640074096,
+      "ttft_ratio_to_official": 0.37109248431550274,
+      "throughput_pass_if_complete": true,
+      "ttft_pass_if_complete": true
+    },
+    {
+      "workload": [
+        16384,
+        1024,
+        64,
+        128
+      ],
+      "completed_rounds": 4,
+      "excluded_first_round": true,
+      "complete": true,
+      "retained_rounds": 3,
+      "mean_total_tokens_per_second": 3649.31,
+      "mean_ttft_ms": 137478.55000000002,
+      "throughput_ratio_to_official": 3.9876632246079877,
+      "ttft_ratio_to_official": 0.22941308328845733,
+      "throughput_pass_if_complete": true,
+      "ttft_pass_if_complete": true
+    }
+  ],
+  "all_performance_pass": false,
+  "candidate_accuracy_validated": false,
+  "full_competition_acceptance": false,
+  "file_sha256": {
+    "/workspace/eggking/runs/final-acceptance-2abbea0_iluvatar_20261110T081350Z/benchmark_results/raw_runs_20261110_161602.csv": "2e5a1dd35ac65c60dc8c389326dbd4fe91b4641d443d9bfe83f578e8c160f2c6",
+    "/workspace/eggking/runs/final-acceptance-2abbea0_iluvatar_20261110T081350Z/benchmark_results/summary_20261110_161602.csv": "59b33ee8e982da39d66bccd3fbc3c6d070e877ba8dde58a8077e6663d07c295e"
+  }
+}

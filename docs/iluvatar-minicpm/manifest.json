@@ -1,0 +1,101 @@
+{
+  "schema_version": 2,
+  "team": "eggking",
+  "platform": "Iluvatar BI-V150",
+  "base_plugin_commit": "13eb9be69ecc5b5ca4f79c44e9ee40081eaa1bf0",
+  "flaggems_commit": "a7620cc191a0b42e040194622c5758b22a7a25dc",
+  "base_plugin_init_sha256": "14bc7332cc485365dd24414063cffc5cf09e9a39a69563bc91182abdbd83a7b7",
+  "packages": {
+    "torch": "2.10.0+corex.4.5.0",
+    "vllm": "0.24.0+empty",
+    "vllm-plugin-fl": "0.3.0rc0+g13eb9be69",
+    "flag_gems": "5.3.5",
+    "flagtree": "0.7.0+iluvatar3.6",
+    "evalscope": "1.11.1",
+    "ixformer": "0.7.0+corex.4.5.0"
+  },
+  "native_vllm_file_hashes": {
+    "v1/attention/ops/triton_unified_attention.py": "bab2c0b9f9a7793ca411796b48ebb4734433160e7e99eabf46ddb7f1c30cb6e0",
+    "v1/attention/ops/triton_attention_helpers.py": "59d9d34bbda988436593cfd9bcb05015d17db8ee85c50f6697e45f987acbf0b1"
+  },
+  "plugin_base_python_fingerprint": {
+    "python_files": 188,
+    "sha256": "cca6daca26b1ebaa7102985ebe9b6080b7b17a1c10e532aa16b9a612e09a7f14"
+  },
+  "flaggems_python_fingerprint": {
+    "python_files": 2560,
+    "sha256": "403b4b94ebba5b021d4ebb7b0cadde2637f27e020d8e81f54fe146ef24a1d9ca"
+  },
+  "flaggems_source_subdir": "src/flag_gems",
+  "benchmark_sha256": "0813eba574e9d1eb50c297c515baa426da1bcb61ce8c78a398b482f246005565",
+  "candidate_commit": "2abbea017e7c3575d715105d3f1819e9d9dff623",
+  "parent_candidate_commit": "731b6aef8c380478d44248ef53cb4b329faedaf9",
+  "runtime_file_hashes": {
+    "__init__.py": "ad748badabd603b960a06ff44da103355a62013db6d12b7260146c5efa3bf14c",
+    "patches/iluvatar_sampler.py": "3d3a7fc0c7ab7dfbf632e2b0f4ef33f90857c4c79ba133ca9b2974f99b9f339f",
+    "patches/iluvatar_attention.py": "a48d75ed7dad1fd7a4ce566072004028c34906c8e4d68226d12b6b6378cc7a90",
+    "patches/iluvatar_prefill.py": "89c8fa1965aca9a94a21833d0b830c63667b8d05060e1a99dcc191517701ebea",
+    "patches/iluvatar_decode_pages.py": "2796926b7fd95e62e1fe9bba22bce200bd4acac9389baaa10de19b343a0e0cc6",
+    "patches/iluvatar_config_cache.py": "212231209d04e199b1d732dd04023bdfd2f18fd2ec47dbff7718126954182cd1",
+    "patches/iluvatar_index1d.py": "469c0167b342ef0006490fe86f90c746affde66a22ca9a75ed290ce73628090f"
+  },
+  "previous_runtime_file_hashes": {
+    "__init__.py": "9bd7e5abc3390348e97a067da23a5a2d99657ea86ee75304908e882c39347b6f",
+    "patches/iluvatar_sampler.py": "3d3a7fc0c7ab7dfbf632e2b0f4ef33f90857c4c79ba133ca9b2974f99b9f339f",
+    "patches/iluvatar_attention.py": "a48d75ed7dad1fd7a4ce566072004028c34906c8e4d68226d12b6b6378cc7a90",
+    "patches/iluvatar_prefill.py": "89c8fa1965aca9a94a21833d0b830c63667b8d05060e1a99dcc191517701ebea"
+  },
+  "plugin_fingerprint_excludes": [
+    "__init__.py",
+    "patches/iluvatar_sampler.py",
+    "patches/iluvatar_attention.py",
+    "version.py",
+    "patches/iluvatar_prefill.py",
+    "patches/iluvatar_config_cache.py",
+    "patches/iluvatar_decode_pages.py",
+    "patches/iluvatar_index1d.py"
+  ],
+  "acceptance": null,
+  "candidate_full_validation_passed": false,
+  "official_performance_validated": false,
+  "model_accuracy_validated": true,
+  "contest_submission_package": true,
+  "scope_note": "Eight performance rounds meet numeric thresholds; original identity audit has two unresolved errors. Independent accuracy rerun 103/105 passes. No new GPU work.",
+  "config_mapper_required_sqlalchemy": "2.0.x; tested 2.0.48",
+  "config_mapper_original_sql_sha256": "6dc19cb581d70154f14b95ed9112d682c6b5919b6cf3f8dea01a78a75ec0efd7",
+  "plugin_source_archive": "archives/index7-source.tar.gz",
+  "source_archives": {
+    "capture-pool-vllm-plugin-FL-source.tar.gz": "76f699cb4532b79b614c99456873dbe154cbdb14495801a95c22a73ae41a18bf",
+    "FlagGems-source.tar.gz": "76cda7fd6892b5143a9f1f25b9ce5d90be1917564bfc849f0e7b122811148009"
+  },
+  "purpose": "Submit frozen 2abbea0 for organizer reproduction; disclose historical identity gap",
+  "delivery_type": "contest_submission_package",
+  "short_ab_audit_sha256": "bf61d518120183ad4f071fde9044c78fb22b65b93b437aa47e2426a98f180392",
+  "candidate_checks_audit_sha256": "95f1a3bb2176055080eb72b07ac10a1bd839f748e4ea23049405a2dcdd600c5c",
+  "accuracy": 0.9809523809523809,
+  "correct": 103.0,
+  "questions": 105,
+  "environment_alignment": {
+    "from_flagtree": "0.6.2a3+iluvatar3.6",
+    "to_flagtree": "0.7.0+iluvatar3.6",
+    "source": "User supplied organizer announcement, official package index verified",
+    "team_algorithm_optimization": false,
+    "fresh_compiler_and_model_cache": true,
+    "numerical_limit": "KV7 known residual 3/2048, both versions identical at preset tolerance"
+  },
+  "engineering_checks_passed": true,
+  "archives": {
+    "index7-source.tar.gz": "0fc5eaa42637f5f3e3b5c7a0f36faf074c04bef0371ad0fe0d72aec84b396cc7"
+  },
+  "accuracy_audit_sha256": "df9f70c482a0b50b0948962cfe127d5e6e02ca32dc6852d68f4edbf6ea0f6bb2",
+  "short_ab_throughput_ratio": 1.109859841762414,
+  "official_submission_status": "not_submitted",
+  "official_organizer_acceptance": false,
+  "qualification_evidence": "evidence/final-acceptance/latest-engineering-qualification.json",
+  "historical_throughput_identity_gap_resolved": false,
+  "team_identity_confirmed": true,
+  "report_author": "eggking",
+  "accuracy_format_diagnosis": "evidence/final-acceptance/accuracy-format-diagnosis-2abbea0.json",
+  "accuracy_format_review": "accuracy-format-review.md",
+  "incremental_results": "incremental-results.md"
+}

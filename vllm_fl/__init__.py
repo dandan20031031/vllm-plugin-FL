@@ -159,6 +159,12 @@ def register_model():
     """Register FL-specific models not yet upstream."""
     # General plugins are loaded independently in spawned model-inspection and
     # worker processes, so all runtime compatibility hooks must be idempotent.
+    from vllm_fl.patches.iluvatar_config_cache import patch_iluvatar_config_cache
+    patch_iluvatar_config_cache()
+
+    from vllm_fl.patches.iluvatar_index1d import patch_iluvatar_index1d
+    patch_iluvatar_index1d()
+
     from vllm_fl.patches.moe_sum import patch_vllm_moe_sum
     from vllm_fl.patches.qwen3_5_text import apply_qwen3_5_text_patches
 
@@ -172,6 +178,15 @@ def register_model():
     register_router()
 
     _register_gdn_packed_decode_patch()
+
+    from vllm_fl.patches.iluvatar_sampler import patch_iluvatar_sampler
+    patch_iluvatar_sampler()
+
+    from vllm_fl.patches.iluvatar_attention import patch_iluvatar_attention
+    patch_iluvatar_attention()
+
+    from vllm_fl.patches.iluvatar_decode_pages import patch_decode_pages
+    patch_decode_pages()
 
     # Register GLM-5 (GlmMoeDsa) — config not yet upstream
     try:

@@ -1,0 +1,8 @@
+# Preserve the frozen checkpoint's byte-exact runtime sources.
+vllm_fl/__init__.py -text whitespace=cr-at-eol
+vllm_fl/patches/iluvatar_sampler.py -text whitespace=cr-at-eol
+vllm_fl/patches/iluvatar_attention.py -text whitespace=cr-at-eol
+vllm_fl/patches/iluvatar_prefill.py -text whitespace=cr-at-eol
+vllm_fl/patches/iluvatar_decode_pages.py -text whitespace=cr-at-eol
+vllm_fl/patches/iluvatar_config_cache.py -text whitespace=cr-at-eol
+vllm_fl/patches/iluvatar_index1d.py -text whitespace=cr-at-eol

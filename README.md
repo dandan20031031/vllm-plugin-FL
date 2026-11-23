@@ -1,5 +1,7 @@
 # vllm-plugin-FL
 
+> **Iluvatar BI-V150 / MiniCPM5-2B optimization checkpoint.** This branch publishes the frozen local implementation, reproduction steps, and measured results. See [天数推理优化：实现与复现](docs/iluvatar-minicpm/README.md).
+
 vllm-plugin-FL is a plugin for the [vLLM](https://github.com/vllm-project/vllm) inference/serving framework, built on FlagOS's unified multi-chip backend — including the unified operator library [FlagGems](https://github.com/flagos-ai/FlagGems) and the unified communication library [FlagCX](https://github.com/flagos-ai/FlagCX). It extends vLLM's capabilities and performance across diverse hardware environments. Without changing vLLM's original interfaces or usage patterns, the same command can run model inference/serving on different chips.
 
 ## Version Compatibility
